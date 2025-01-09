@@ -1,0 +1,152 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, rgba(0, 0, 69, 0.633), rgb(0, 78, 85));
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px;
+    color: tomato;
+    text-shadow: 2px 2px 2px black;
+    background-image: linear-gradient(to right,transparent, rgba(0, 255, 255, 0.147), transparent);
+    padding: 8px;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+input {
+    height: 100px;
+    font-size: 2em;
+    width: 80%;
+    padding-left: 5%;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(63, 63, 63, 0.515);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid green;
+}
+
+button.add {
+    width: 20%;
+    cursor: pointer;
+    background-color: rgb(0, 120, 0);
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 2em;
+    box-shadow: 0px 0px 20px rgba(63, 63, 63, 0.515);
+}
+
+button.add:hover {
+    background-color: rgb(0, 113, 0);
+}
+button.add:active {
+    background-color: rgb(0, 73, 0);
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    /* border: 1px solid blue; */
+    padding-top: 40px;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(63, 63, 63, 0.515);
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.item.clicado {
+    background-color: rgb(193, 238, 193);
+}
+
+.item .item_nome {
+    cursor: pointer;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.item.clicado .item_nome {
+    text-decoration: line-through;
+    color: rgb(77, 77, 77);
+}
+
+.item.clicado .item_nome:hover {
+    cursor: pointer;
+}
+
+.item_icone {
+    flex: 20%;
+    /* border: 1px solid tomato; */
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    height: 100%;
+    padding-top: 23px;
+}
+
+.item_nome {
+    flex: 55%;
+    /* border: 1px solid deeppink; */
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.item_botao {
+    flex: 25%;
+    /* border: 1px solid green; */
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(101, 0, 0);
+}
+
+.delete:active {
+    background-color: rgb(64, 0, 0);
+}
+
+.mdi-check-circle {
+    color: green;
+}
